@@ -1,0 +1,202 @@
+
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width: 100%;
+    height:100vh;
+    background: var(--background);
+    font-family:'Unbounded',sans-serif;
+    font-weight: 300;
+}
+.container{
+    height:530px;
+    overflow: hidden;
+}
+
+
+/******** Utility Classes *********/
+
+/* display flex */
+.flex{
+    display:flex;
+}
+/* justify content center */
+.j-c{
+    justify-content: center;
+}
+/* align items center */
+.a-c{
+    align-items: center;
+}
+
+
+
+/* Defining Variables for Colors */
+
+:root{
+    --background:#000;
+    --clockFont:#44ff00;
+    --setAlarmFont:#FF5733 ;
+    --placeholder:#d3d3d3;
+}
+
+
+
+/******* Live Watch CSS ********/
+
+.liveWatch{
+    width:100%;
+    color:var(--clockFont);
+    font-size:5rem;
+    margin-bottom:2.5rem;
+}
+.semiContainer{
+    width:150px;
+}
+
+
+
+/***** Set Alarm CSS ******/
+
+.setAlarmContainer{
+    width:100%;
+    position:relative;
+}
+input{
+    width:2.8rem;
+    height:3.5rem;
+    color:var(--clockFont);
+    background: transparent;
+    border:none;
+    border-radius:.1rem;
+    font-size:1.5rem;
+    margin: 0 .5rem; 
+    outline:none;
+    text-align:center;  
+    position:relative;
+    font-family:'Unbounded';
+}
+input[type="number"]::-webkit-input-placeholder {
+    color:var(--placeholder);
+    font-size:1.5rem;
+}
+button{
+    width:7rem;
+    height:3.5rem;
+    border-radius:.5rem;
+    font-family: "Poppins";
+    font-size:1.1rem;
+    margin-left:1rem;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--clockFont);
+    background:var(--clockFont);
+}
+input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+        display:none;
+}
+input[type="text"]::-webkit-input-placeholder{
+    color:var(--clockFont);
+}
+input[type="text"]{
+   font-size:1.2rem;
+}
+.inputNaming{
+    color:#44ff00;
+    font-size:.7rem;
+}
+.innerContainer{
+    position:relative;
+    height:7rem;
+    width:5rem;
+    flex-direction:column;
+}
+.input-button {
+    cursor: pointer;
+    position: absolute;
+    width: 2.8rem;
+    text-align: center;
+    margin: 0px;
+    height: 1rem;
+    line-height: 10px;
+    transform:translateX(-50%);
+    font-size:1.2rem;
+    font-weight: bold;
+    color:var(--background);
+    z-index: 10;
+    
+}
+.upper {
+    background:linear-gradient(var(--background),30%,var(--clockFont));
+    left: 50%;
+    top: 0;
+    border-radius:0 0 .5rem .5rem;
+}
+.lower {
+    background:linear-gradient(var(--clockFont),80%,var(--background));
+    left: 50%;
+    top: 6rem;
+    border-radius:.5rem .5rem 0 0;
+}
+.changeUp{
+    background:linear-gradient(var(--clockFont),80%,var(--background));
+    left: 50%;
+    top: 6rem;
+    border-radius:.5rem .5rem 0 0;
+    align-items: flex-end;
+}
+
+
+
+/******* Alarm List CSS *******/
+
+.alarms{
+    width: 100%;
+    height:250px;
+    margin-top:2rem;
+    overflow:hidden;
+    overflow-y: scroll;
+}
+.alarms::-webkit-scrollbar{
+    display: none;
+  }
+li{
+    width:500px;
+    height:3rem;
+    background:transparent;
+    border:2px solid var(--clockFont);
+    border-radius: 1rem;
+    margin:.5rem auto;
+    color:var(--clockFont);
+    list-style:none;
+    font-size:1.2rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li .left .ringTime{
+    margin-left:1rem;
+}
+li .right .status{
+    font-size:1rem;
+}
+li .right .statusSign{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:var(--clockFont);
+    margin-left:1rem;
+}
+li .delete{
+    width:2rem;
+    cursor:pointer;
+    color:var(--setAlarmFont);
+}
+li .delete i:hover{
+    font-size:1.5rem;
+}

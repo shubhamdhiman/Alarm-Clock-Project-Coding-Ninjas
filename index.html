@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of Project -->
+    <title>Alarm Clock</title>
+
+    <!-- Add icon link -->
+    <link rel = "icon" href = "./static/images/icon.png" type = "image/x-icon">
+
+    <!-- Importing Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400;500;600;700&family=Poppins:wght@500;600&family=Unbounded:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Importing CSS File -->
+    <link rel="stylesheet" href="static/css/alarmClock.css">
+
+    <!-- Importing JavaScript File -->
+    <script defer src="static/js/alarmClock.js"></script>
+</head>
+<body class="flex j-c a-c">
+    <div class="container">
+        
+        <!-- Live Watch -->
+        <div class="liveWatch flex" id="liveWatch">
+            <!-- Creating P tags to not let the liveWatch resize its width according to the characters width -->
+            <p id="hour"class="semiContainer flex j-c"></p>
+            <p id="minute"class="semiContainer flex j-c"></p>
+            <p id="second"class="semiContainer flex j-c"></p>&nbsp;
+            <p id="meridiem"class="semiContainer flex j-c"></p>
+        </div>
+
+        <!-- Set Alarm Container -->
+        <div class="setAlarmContainer flex j-c a-c">
+            <div class="innerContainer flex j-c a-c">
+                <div id="incbuttonhour" class="input-button upper flex j-c a-c" style="cursor: pointer;">
+                    <p>+</p>
+                </div>
+                <input type="number" id="hourInput" placeholder="--" max="12" min="0">
+                <p class="inputNaming">Hour</p>
+                <div id="decbuttonhour" class="input-button lower">
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="innerContainer flex j-c a-c">
+                <div id="incbuttonminute" class="input-button upper flex j-c a-c">
+                    <p>+</p>
+                </div>
+                <input type="number" id="minuteInput" placeholder="--" max="60" min="0">
+                <p class="inputNaming">Min</p>
+                <div id="decbuttonminute" class="input-button lower">
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="innerContainer flex j-c a-c">
+                <div id="incButtonSecond" class="input-button upper flex j-c a-c">
+                    <p>+</p>
+                </div>
+                <input type="number" id="secondInput" placeholder="--" max="60" min="0">
+                <p class="inputNaming">Sec</p>
+                <div id="decButtonSecond" class="input-button lower">
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="innerContainer flex j-c a-c">
+                <input type="text"id="meridiemInput" value="PM" placeholder="PM">
+                <div id="meridiemBtn" class="input-button changeUp flex j-c">
+                    <p>^</p>
+                </div>
+            </div>   
+            <button id="setAlarm">Set Alarm</button>  
+        </div>
+
+        <!-- Alarms -->
+        <div class="alarms">
+            <ul id="list">
+                <!-- List item (Alarm) will append here -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
