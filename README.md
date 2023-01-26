@@ -2,6 +2,8 @@
 
 This project consists an Alarm Clock.
 There is a live clock and an option to set the alarm.
+Used HTML, CSS and Javascript to make this project.
+No Javascript library is used.
 
 
 ** Live Clock **
