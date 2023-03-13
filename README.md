@@ -20,6 +20,7 @@ No Javascript library is used.
 - When the alarm meets the live time, status color changes to red and a popup will arise.
 - Audio will play, whenever the user Set Alarm, Delete Alarm and when Alarm time meets the live time.
 
+Have a look at the project via this link : https://shubhamdhiman.github.io/Alarm-Clock/
 
 Previews of the Alarm Clock Project
 
