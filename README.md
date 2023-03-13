@@ -32,6 +32,8 @@ No Javascript library is used.
 
 ### Have a look at the project via this link : https://shubhamdhiman.github.io/Alarm-Clock/
 
+### Watch on youtube:  https://www.youtube.com/watch?v=IdtMfdsW394&ab_channel=ShubhamDhiman
+
 ## Previews of the Alarm Clock Project
 
 1. First View
