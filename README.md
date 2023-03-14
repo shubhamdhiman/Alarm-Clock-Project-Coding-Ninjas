@@ -30,7 +30,7 @@ No Javascript library is used.
 * Scripting/Programming - Javascript
 * IDE - VSCode
 
-### Have a look at the project via this link : https://shubhamdhiman.github.io/Alarm-Clock/
+### Have a look at the project via this link : https://alarmclockstcn.netlify.app/
 
 ### Watch on youtube:  https://www.youtube.com/watch?v=IdtMfdsW394&ab_channel=ShubhamDhiman
 
