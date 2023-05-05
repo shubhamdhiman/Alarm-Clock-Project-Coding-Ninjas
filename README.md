@@ -1,4 +1,4 @@
-# Alarm Clock Poject 
+# Alarm Clock Project 
 
 This project consists an Alarm Clock.
 There is a live clock and an option to set the alarm.
